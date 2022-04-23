@@ -31,7 +31,7 @@
     }
 }
 
-@media screen and (max-width:992px) {
+@media only screen and (max-width:992px) {
     .container{max-width: 929px;}
     @import "../mixin";
 .header{
@@ -59,7 +59,7 @@
 
 
 
-@media screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     .container{max-width: 690px;}
 .header{
     &__title{
@@ -86,8 +86,8 @@
 
 
 
-@media screen and (max-width:575px) {
-    .container{max-width: 510px;}
+@media only screen and (max-width:575px) {
+    .container{max-width: 510px;}*{max-width: 510px;}
 
     .header{display: flex;flex-direction: column-reverse;
         justify-content: center; align-items: center;
@@ -110,18 +110,19 @@
         &__img{display: none;}
     
     }
-        .main-img{width: 600px;height: 500px;margin-left:15px;}
+        .main-img{width: 510px;height: 500px;}
     }
 
 
 
 
-@media screen and (max-width:320px) {
+@media only screen and (max-width:320px) {
     .container{max-width: 290px !important;}
     .header{
         .header__title{font-size: 24px;width: 220px;line-height: 36px;}
         .header__subtitle{font-size: 14px;line-height: 21px;width: 240px;margin-top: 30px;}
 
-        .main-img{width: 300px;margin-bottom: -100px;}
+        .main-img{width: 300px;height: 350px;
+            }
     }
 }

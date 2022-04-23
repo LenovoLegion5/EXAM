@@ -83,7 +83,7 @@
 
 
 
-@media screen and (max-width:992px) {
+@media only screen and (max-width:992px) {
     .container{max-width: 929px;}
     *{margin: 0;
     padding: 0;box-sizing: border-box;}
@@ -139,7 +139,7 @@
 
 
 
-@media screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     .container{max-width: 690px;}
 
     .section-title{font-size: 30px;}
@@ -190,7 +190,7 @@
 }
 
 
-    @media screen and (max-width:575px) {
+    @media only screen and (max-width:575px) {
         .container{max-width: 510px;}
         .card_margin{margin-left: 25px;}
         .cards{
@@ -213,6 +213,7 @@
         .skills{
             &__wrapper{
                 position: relative;
+                height: 1250px;
             }
             &__wrapper2{flex-direction: column;}
         }
@@ -240,8 +241,8 @@
 
 
 
-    @media screen and (max-width:320px) {
-        .container{max-width: 290px;}
+    @media only screen and (max-width:320px) {
+        .container{max-width: 290px !important;}
         .skills{margin-bottom: 500px;
             &__wrapper{flex-direction: column;}
         }

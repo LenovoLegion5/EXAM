@@ -29,9 +29,10 @@
 .margin_top{margin-top: 5.5%;}
 
 .blocks_wrapper{display: flex;align-items: baseline;}
-@media screen and (max-width:992px) {
+@media only screen and (max-width:992px) {
     .container{max-width: 929px;}
     .pricing{
+        .blocks_wrapper{max-width: 929px;}
         margin-top: 150px;
         &__title{font-size: 22px;margin-bottom: 10px;}
         &__subtitle{font-size: 16px;width: 300px;}
@@ -50,7 +51,7 @@
 
 
 
-@media screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     .container{max-width: 690px !important;}
     .pricing{
         margin-top: 90px;
@@ -70,7 +71,7 @@
 
 
 
-@media screen and (max-width:575px) {
+@media only screen and (max-width:575px) {
     .container{max-width: 510px;}
 
     .pricing{
@@ -92,8 +93,8 @@
 }
 
 
-@media screen and (max-width:320px) {
-    .container{max-width: 290px;}
+@media only screen and (max-width:320px) {
+    .container{max-width: 290px !important;}
 
     .pricing{
         &__card{width: 290px;}
