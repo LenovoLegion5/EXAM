@@ -1,0 +1,161 @@
+@import "../variables";
+#side-checkbox{display: none;}.side-panel{display: none;}
+*{
+    font-family: "Poppins";
+}
+.nav{
+    padding: 55px 0px;
+    display: flex;
+    align-items: center;
+    &__list{
+        display: flex;
+        list-style-type: none;
+    }
+    &__links{
+        margin-left: 30px;
+        font-weight: 500,medium;
+        font-size: 20px;
+        color: $main-color;
+        text-decoration: none;
+    }
+    &__footer-link{
+        margin-left: auto;
+        text-decoration: none;
+        color: black;font-size: 24px;
+        padding: 17px 57px;
+        border-radius: 5px;
+        border: 3px solid $main-color;
+    }
+}
+.logo{
+    margin-right: 18%;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    &_gray{
+        color: $text-color;
+    }
+}
+.bars{display: none;}
+#nav-mobile{display: none;}
+.nav-modal{display: none;}
+
+
+@media screen and (max-width:992px) {
+    .container{max-width: 929px;}
+    .nav{
+        font-family: "Poppins";
+        padding: 55px 0px;
+        display: flex;
+        align-items: center;
+        &__list{
+            display: flex;
+            list-style-type: none;
+        }
+        &__links{
+            margin-left: 30px;
+            font-weight: 500,medium;
+            font-size: 16px;
+            color: $main-color;
+            text-decoration: none;
+        }
+        &__footer-link{
+            margin-left: auto;
+            text-decoration: none;
+            color: black;font-size: 18px;line-height: 24px;
+            padding: 11px 40px;
+            border-radius: 5px;
+            border: 2px solid $main-color;
+        }
+    }
+    .logo{
+        margin-right: 18%;
+        font-size: 30px;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+        &_gray{
+            color: $text-color;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container{max-width: 690px;}
+    .logo{font-size: 30px;margin-right: auto;}
+    .nav__list{display: none;}
+    .nav__footer-link{display: none;}
+    .bars{display: block;
+        visibility: visible;}
+
+    .nav__list2{display:block;
+        list-style-type: none;}
+
+
+    .links_size{font-size: 50px;line-height: 80px;text-align: left;
+    color: white;}
+
+    .nav__footer-link2{padding: 10px 20px;border-radius: 5px;
+        border: 3px solid rgb(233, 141, 141);text-decoration: none;font-size: 50px;color:white;margin-left: 35px;line-height: 120px;
+    }
+    #side-checkbox {
+        display: none;
+    }
+    .side-panel {
+        padding-top: 70px;
+        display: block;text-align: center;
+        position: absolute;
+        z-index: 1;
+        top:0;
+        left: -120vw;
+        transition: all 0.9s;   
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(128, 128, 128, 0.89);
+    }
+    .side-button-1 {
+        display: inline-block;
+    }
+    /* Переключатели кнопки 1 */
+    .side-button-1 .side-close {
+        display: none;
+    }
+    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+        display: none;
+    }
+    #side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+        display: block;
+    }
+    #side-checkbox:checked + .side-panel {
+        left: 0;
+    }
+    .side-button-2 {
+        position: absolute;right: 30px;top: 20px;    
+    }
+
+
+    .nav__link2{
+        text-decoration: none;
+        color: $main-color;
+        font-size: 20px;
+        line-height: 80px;
+    }
+
+
+    .border_link{padding: 0px 55px;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width:575px){
+    .container{max-width:510px}
+}
+@media screen and (max-width:320px) {
+    .container{max-width: 290px;}
+    .links_size{font-size: 30px;}
+    .nav{padding: 30px 0px;position: relative;z-index: 10;}
+    .nav__footer-link2{font-size: 30px;}
+}

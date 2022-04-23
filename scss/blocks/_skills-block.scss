@@ -1,0 +1,263 @@
+@import "../mixin";
+
+.section-title{
+    @include section-title;
+    text-align: center;
+}
+
+.card_margin{margin-left: 45px;}
+.skills{
+    margin-top: 147px;
+    font-family: 'Poppins';
+    &__wrapper{display: flex;flex-wrap: nowrap;}
+    &__wrapper2{display: flex;flex-wrap: nowrap;}
+    .wrapper__card{
+        width: 435px;
+        height: 894px;
+        background-color: #F5F5F5;
+        }
+    }
+    .img_margin{margin-bottom: 40px;}
+    .cards{
+        box-sizing: border-box;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        border-radius: 10px;
+        
+        &__title{
+            color: $main-color;
+            align-self: flex-start;
+            margin-top: -15px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+            
+        &__subtitle{
+            width: 347px;
+            @include card-up-style
+        }
+        &__link{
+            @include button;
+            line-height: 27px;
+            font-weight: 500,medium;
+            align-self: start;
+            font-size: 18px;
+            margin-top: 36px;
+        }
+    }
+    .card2,.card3{width: 434px;height: 531px;}
+    .card2{
+        padding-top: 0px;
+        &__img{align-self: flex-end;}
+        &__title{margin-bottom: 0px;}
+            &__subtitle{margin-bottom: -10px;}
+}
+.skills_column{
+    margin-left: auto;
+}
+.card3{
+    margin-left: auto;
+    box-sizing: border-box;
+    padding: 0px;
+    &__title{margin-top: 8px;margin-bottom: 0px;}
+    &__subtitle{margin-bottom:-10px;
+    width: 354px;}
+}
+
+.card4{
+    width: 885px;
+    height: 343px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 80px 0px 68px 48px;
+    &__subtitle{width: 330px;margin-bottom: 40px;}
+    .bl{margin-top: 40px !important;}
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .container{max-width: 929px;}
+    *{margin: 0;
+    padding: 0;box-sizing: border-box;}
+
+    .section-title{font-size: 36px;}
+    .margin_btm{margin-bottom: 50px;}
+    .card_margin{margin-left: 26px;}
+
+    .cards{padding: 0px 0px;}
+
+    .skills{
+        margin-top: 80px;
+    }
+    .skills__wrapper > .card-1{
+        width: 303px;
+        height: 696px;
+        .card1__img{width: 280px;height: 300px;}
+    }
+    .card1__title{
+        margin-top: -40px;
+    }
+
+    .card2__img{
+        width: 250px;height: 223px;
+    }
+
+    .card3__img{
+        width: 250px;height: 200px;align-self: flex-start;
+    }
+
+    .card2,.card3{
+        width: 302px;height: 441px;
+    }
+
+    .cards{
+        &__title{font-size: 22px;}
+        &__subtitle{font-size: 14px;width: 250px;margin-top: 20px;}
+        &__link{@include button (16px 16px 42px 41px);margin-top: 25px;}
+    }
+    .card2__subtitle{width: 245px;}
+    .card3__subtitle{width: 240px;}
+
+
+    .card4{
+        padding: 0px 25px;
+        width: 616px;height: 241px;margin-top: 13px;
+        &__img{width: 45%;}
+        &__subtitle{width: 300px;margin-top: 15px;margin-bottom: 30px;}
+    }
+}
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .container{max-width: 690px;}
+
+    .section-title{font-size: 30px;}
+
+    .card_margin{margin-left: 23px;}
+
+    .cards{padding: 0px 0px;
+        &__title{font-size: 20px;}
+        &__subtitle{font-size: 13px;width: 197px;margin-top: 20px;}
+        &__link{
+            @include button (12px 12px 32px 31px)
+            ;margin-top: 25px;font-size: 16px;line-height: 24px;}
+    }
+
+    .skills{
+        margin-top: 80px;
+    }
+    .skills__wrapper > .card-1{
+        width: 224px;
+        height: 662px;
+        .card1__img{width: 224px;height: 250px;}
+    }
+    .card1__title{
+        margin-top: -40px;
+    }
+
+    .card2,.card3{
+        width: 227px;height: 441px;
+    }
+    .card2__img{align-self: flex-start;
+        width: 200px;height: 188px;
+    }
+    .card3__img{
+        width: 220px;height: 170px;align-self: flex-start;
+    }
+
+    .card2__title{margin-top: -10px;}
+
+    .card2__subtitle{width: 190px;margin-top: 5px;}
+    .card3__subtitle{width: 190px;margin-top: 5px;}
+
+    .card4{
+        padding: 0px 18px;
+        width: 462px;height: 210px;margin-top: 10px;
+        &__img{width: 50%;margin-left: -10px;}
+        &__subtitle{width: 250px;margin-top: 5px;margin-bottom: 30px;}
+    }
+}
+
+
+    @media screen and (max-width:575px) {
+        .container{max-width: 510px;}
+        .card_margin{margin-left: 25px;}
+        .cards{
+            padding-bottom: 30px;
+            padding-top: -50px;
+            position: relative;
+            box-sizing: border-box !important;
+            width: 240px !important;
+            height: 534px !important;
+            &__title{font-size: 18px;}
+            &__subtitle{
+                font-size: 12px;
+                margin-top: 5px;
+                flex: 1 1 auto;}
+
+            &__link{font-size: 14px;line-height: 21px;
+                @include button (15px 15px 10px 10px)
+            }
+        }
+        .skills{
+            &__wrapper{
+                position: relative;
+            }
+            &__wrapper2{flex-direction: column;}
+        }
+        .card1__subtitle{margin-left: 10px;margin-bottom: -15px;}
+        .card1__img{height: 200px !important;width: 200px !important;
+        align-self: flex-start;
+        }
+
+        .card3{
+            position: relative;
+            right: 270px;
+            top: 34px;
+        }
+        .card4{display: flex;
+            align-items: baseline;
+            justify-content: start;
+            flex-direction: column-reverse;
+            position: relative;
+            top: -510px;
+            right: 0px;
+            &__subtitle{width: 190px;margin-bottom: 83.5%;}
+            &__img{width: 200px;height: 200px;}
+        }
+    }
+
+
+
+    @media screen and (max-width:320px) {
+        .container{max-width: 290px;}
+        .skills{margin-bottom: 500px;
+            &__wrapper{flex-direction: column;}
+        }
+        .cards{max-height: 473px;min-width: 290px;
+            box-sizing: border-box !important;
+            margin-top: 20px;
+            position: relative;
+            top: 0px; right: 0px; bottom:0px; left: 0px;
+            &__title{font-size: 18px;line-height: 50px;}
+            &__subtitle{font-size: 13px;}
+        }
+        .card-1{min-height: 600px;}
+        .card4{
+            &__img{width: 270px;height: auto;margin-left: -200px;
+                }
+            &__content{margin-top: 200px;}
+            &__subtitle{margin-bottom: 50px;}
+        }
+        }

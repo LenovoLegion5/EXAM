@@ -1,0 +1,128 @@
+@import "../mixin";
+.header{
+    position: relative;
+    display: flex; justify-content: space-between;align-items: flex-start;
+    font-family: 'Poppins';
+    h1{
+    font-size: 64px;
+    font-weight: 600;
+    width: 386px;
+    height: 240px;
+    line-height: 80px;
+    }
+    &__subtitle{
+        margin-bottom: 91px;
+        font-size: 24px;
+        color: $text-color;
+        font-weight: 400;
+        width: 550px;
+        line-height: 36px;
+    }
+    &__link{
+        font-size: 36px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        @include button (32px,32px,117px,117px,5px)
+    }
+    &__img{
+        position: absolute;
+        top: 100px;
+        left: 330px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .container{max-width: 929px;}
+    @import "../mixin";
+.header{
+    h1{
+    font-size: 48px;
+    line-height: 64px;margin-bottom: -40px;
+    }
+    &__subtitle{
+        margin-bottom: 51px;
+        font-size: 20px;
+        width: 420px;
+        line-height: 36px;
+    }
+    &__link{
+        font-size: 24px;line-height: 36px;
+        @include button (22px,22px,78px,78px)
+    }
+    &__img{
+        width: 100px;height: 130px;
+        top:50px;left:250px;
+    }
+}
+.main-img{width: 500px;height: 600px;}
+}
+
+
+
+@media screen and (max-width:767px) {
+    .container{max-width: 690px;}
+.header{
+    &__title{
+    font-size: 36px;width: 290px;
+    line-height: 45px;margin-bottom: -80px;
+    }
+    &__subtitle{
+        margin-bottom: 41px;
+        font-size: 16px;
+        width: 335px;
+        line-height: 24px;
+    }
+    &__link{
+        font-size: 18px;line-height: 27px;
+        @include button (18px,18px,65px,65px)
+    }
+    &__img{
+        width: 80px;height: 80px;
+        top:100px;left:240px;
+    }
+}
+.main-img{width: 350px;height: 420px;margin-left:-35px;}
+}
+
+
+
+@media screen and (max-width:575px) {
+    .container{max-width: 510px;}
+
+    .header{display: flex;flex-direction: column-reverse;
+        justify-content: center; align-items: center;
+        &__content{display: flex;flex-direction: column;align-items: center;width: 100%;}
+        .h1{width: 491px;margin-bottom: -180px;
+            font-size: 34px;
+            line-height: 45px;text-align: center;
+            }
+
+        &__subtitle{text-align: center;
+            margin-bottom: 41px;
+            font-size: 16px;
+            width: 535px;
+            line-height: 24px;
+        }
+        &__link{
+            font-size: 18px;line-height: 27px;
+            @include button (20px,20px,85px,85px)
+        }
+        &__img{display: none;}
+    
+    }
+        .main-img{width: 600px;height: 500px;margin-left:15px;}
+    }
+
+
+
+
+@media screen and (max-width:320px) {
+    .container{max-width: 290px;}
+    .header{height: 700px;margin-top: -120px;
+        .header__title{font-size: 24px;width: 220px;line-height: 36px;}
+        .header__subtitle{font-size: 14px;line-height: 21px;width: 240px;margin-top: 30px;}
+
+        .main-img{width: 300px;margin-bottom: -100px;}
+    }
+}
