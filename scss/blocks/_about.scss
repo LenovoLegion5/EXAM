@@ -49,11 +49,12 @@
 }
 
 @media screen and (max-width:320px) {
-    .container{max-width: 290px;}
+    .container{max-width: 290px;}*{max-width: 290px;}
 
     .text_left{
         font-size: 18px;
     }
+    .about__img{max-width: 290px;}
     .about__desc{max-width: 290px;}
     .wrapper-block{flex-direction: column;align-items: center;width: 290px;}
 }

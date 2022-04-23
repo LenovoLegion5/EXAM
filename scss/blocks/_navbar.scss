@@ -154,8 +154,7 @@
     .container{max-width:510px}
 }
 @media screen and (max-width:320px) {
-    .container{max-width: 290px;}
+    .container{max-width: 290px !important;}
     .links_size{font-size: 30px;}
-    .nav{padding: 30px 0px;position: relative;z-index: 10;}
     .nav__footer-link2{font-size: 30px;}
 }

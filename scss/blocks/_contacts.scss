@@ -68,8 +68,8 @@
 }
 
 @media screen and (max-width:575px) {
-    .container{max-width: 510px;}
-    .contacts{
+    .container{max-width: 510px;}*{max-width: 510px;}
+    .contacts{max-width: 510px;
         &__title{text-align: center;margin-top: 70px;margin-bottom: 50px;}
         &__content{width: 510px;align-items: center;margin-top: 50px;}
         &__email{padding:20px 190px 20px 30px;}
