@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
-<body>
+<div>
     <nav class="nav">
-        <div class="container">
             <a href="./index.html" class="logo">Brit<span class="logo_gray">lex</span></a>
         <input type="checkbox" id="side-checkbox">
     <div class="side-panel">
@@ -29,36 +28,35 @@
             </ul>
             <a class="nav__footer-link2" href="tel:+998990067143">Let's Talk</a>
     </div>
-<div class="side-button-1-wr">
-    <label class="side-button-1" for="side-checkbox">
-        <span><img class="bars side-b side-open" src="/img/bars.svg" alt="close tag"></span>
-    </label>
-</div>
-        </div>
+    <div class="side-button-1-wr">
+        <label class="side-button-1" for="side-checkbox">
+            <span><img class="bars side-b side-open" src="/img/bars.svg" alt="close tag"></span>
+        </label>
+    </div>
+    
+    
+    
+    
+    
+    
+    <input type="checkbox" id="nav-mobile" >
+    <ul class="nav__list">
+        <li class="nav__item"><a href="/index.html" class="nav__links">Home</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__links">Skills</a></li>
+        <li class="nav__item"><a href="#about-us" class="nav__links">About Us</a></li>
+        <li class="nav__item"><a href="#pricing" class="nav__links">Pricing</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__links">Contacts</a></li>
+    </ul>
+    <a class="nav__footer-link" href="tel:+998990067143">Let's Talk</a>
+</nav>
 
 
 
 
-
-
-            <input type="checkbox" id="nav-mobile" >
-        <ul class="nav__list">
-            <li class="nav__item"><a href="/index.html" class="nav__links">Home</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__links">Skills</a></li>
-            <li class="nav__item"><a href="#about-us" class="nav__links">About Us</a></li>
-            <li class="nav__item"><a href="#pricing" class="nav__links">Pricing</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__links">Contacts</a></li>
-        </ul>
-        <a class="nav__footer-link" href="tel:+998990067143">Let's Talk</a>
-    </nav>
-
-
-
-
-    <header class="header container">
-                <div class="header__content">
-                    <img class="header__img" src="/img/lamp.svg" alt="">
-                    <h1 class="header__title h1">Learn Any Foreign
+<header class="header">
+    <div class="header__content">
+        <img class="header__img" src="/img/lamp.svg" alt="">
+        <h1 class="header__title h1">Learn Any Foreign
                         Language</h1>
                         <p class="header__subtitle">With our teachers who write a program for 
                         each student, you will be able to make your
@@ -73,9 +71,8 @@
 
 
 
-
-<main class="skills">
-                <h2 class="section-title margin_btm">Skills</h2>
+            <main class="skills">
+                        <h2 class="section-title margin_btm">Skills</h2>
     <div class="skills__wrapper">
         <div class="wrapper__card card-1 cards">
             <img class=" img_margin card1__img" src="/img/first-card-img.svg" alt="">
@@ -123,35 +120,31 @@
     </div>
 </main>
 
-
     <section class="about">
-            <div class="about_flex">
-                <div class="about__content">
-                    <h2 class="text_left">About Us</h2>
-                    <p class="about__desc desc_width">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and meansof solving them. Application development begins at the top level (strategy), where the future software product is described quiteabstractly from the point of view of the expectations of both users and the customer.
-                    </p>
+        <div class="about__content">
+            <h2 class="text_left">About Us</h2>
+            <p class="about__desc desc_width">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and meansof solving them. Application development begins at the top level (strategy), where the future software product is described quiteabstractly from the point of view of the expectations of both users and the customer.
+            </p>
                 
-                    <div class="wrapper-block">
-                        <div class="mini-card">
-                            <h4 class="title_margin about__titles">800</h4>
-                            <p class="about__desc desc_align">Pupils</p>
-                        </div>
-                        <div class="mini-card">
-                            <h4 class="title_margin about__titles">16</h4>
-                            <p class="about__desc desc_align">Teachers</p>
-                        </div>
-                        <div class="mini-card">
-                            <h4 class="title_margin about__titles">6</h4>
-                            <p class="about__desc desc_align">Foreign languages</p>
-                        </div>
-                    </div>
+            <div class="wrapper-block">
+                <div class="mini-card">
+                    <h4 class="title_margin about__titles">800</h4>
+                    <p class="about__desc desc_align">Pupils</p>
                 </div>
-                    <div class="about__img_wrapper">
-                        <img class="about__img" src="/img/about-us.svg" alt="">
-                    </div>
+                <div class="mini-card">
+                    <h4 class="title_margin about__titles">16</h4>
+                    <p class="about__desc desc_align">Teachers</p>
+                </div>
+                <div class="mini-card">
+                    <h4 class="title_margin about__titles">6</h4>
+                    <p class="about__desc desc_align">Foreign languages</p>
+                </div>
             </div>
-        </section>
-
+        </div>
+            <div class="about__img_wrapper">
+                <img class="about__img" src="/img/about-us.svg" alt="">
+            </div>
+    </section>
 
 
 
@@ -208,11 +201,12 @@
 
 
 
-
-            <hr class="line">
-        <footer class="footer container">
+    <footer class="footer">
+        <hr class="line">
+        <div class="footer__block">
             <a href="./index.html" class="logo2">Brit<span class="logo_gray">lex</span></a>
-        <a href="#" class="footer__link">Terms and Conditions • Privacy Policy • Cookie Policy</a>
-    </footer>
+    <a href="#" class="footer__link">Terms and Conditions • Privacy Policy • Cookie Policy</a>
+        </div>
+</footer>
 </body>
 </html>

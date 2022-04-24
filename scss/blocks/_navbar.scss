@@ -4,6 +4,7 @@
     font-family: "Poppins";
 }
 .nav{
+    width: 1338px;
     padding: 55px 0px;
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@
 
 @media only screen and (max-width:992px) {
     .container{max-width: 929px;}
-    .nav{
+    .nav{width: 929px;
         font-family: "Poppins";
         padding: 55px 0px;
         display: flex;
@@ -83,6 +84,7 @@
 
 @media only screen and (max-width:767px) {
     .container{max-width: 690px;}
+    .nav{width: 690px;}
     .logo{font-size: 30px;margin-right: auto;}
     .nav__list{display: none;}
     .nav__footer-link{display: none;}

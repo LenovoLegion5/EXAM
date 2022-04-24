@@ -1,7 +1,6 @@
 @import "../mixin";
-.about{margin-top: 250px;
-    &_flex{display: flex;align-items: center;height: 500px;}
-    // &__content{width: 200px;}
+.about{margin-top: 250px;display: flex; align-items: center;
+    flex-direction: row;width: 1338px;
     &__desc{margin-bottom: -20px;
         @include card-up-style (20px);
     }
@@ -31,15 +30,14 @@
     .about__desc{font-size: 14px;}
     .desc_width{width: 340px;}
     .about__img{width: 310px;height: 350px;display: block;}
-    .text_left{margin-bottom: -70px;font-size: 30px;}
+    .text_left{margin-bottom: 30px;font-size: 30px;}
 }
 
 @media only screen and (max-width:575px) {
-    .container{max-width: 510px;}
-    .text_left{margin-top: 0px; margin-bottom: 10px; text-align: center;font-size: 30px;}
-    .about{
-        display: flex;flex-direction:column-reverse;
-
+    .container{max-width: 510px;}*{max-width: 510px !important;}
+    .text_left{margin-top: 0px; margin-bottom: 0px; text-align: center;font-size: 30px;}
+    .about{flex-direction:column-reverse;
+        margin-top: 0px;
         &__desc{font-size: 14px;
             line-height: 21px;text-align: center;
             width: 510px;}
@@ -51,11 +49,13 @@
 
 @media only screen and (max-width:320px) {
     .container{max-width: 290px !important;}*{max-width: 290px !important;}
-
     .text_left{
         font-size: 18px;
     }
-    .about__img{max-width: 290px;}
-    .about__desc{max-width: 290px;}
-    .wrapper-block{flex-direction: column;align-items: center;width: 290px;}
+    .about{flex-direction: column-reverse;padding-top: 400px;
+        &__img{max-width: 290px;}
+        &__desc{max-width: 290px;}
+
+    }
+    .wrapper-block{flex-direction: column-reverse; align-items: center;width: 290px;}
 }
