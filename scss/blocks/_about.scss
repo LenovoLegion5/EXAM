@@ -1,7 +1,7 @@
 @import "../mixin";
-.about{margin-top: 0px;display: flex; justify-content: space-between;
-    align-items: center;
-    &__content{width: 635px;}
+.about{margin-top: 250px;
+    &_flex{display: flex;align-items: center;height: 500px;}
+    // &__content{width: 200px;}
     &__desc{margin-bottom: -20px;
         @include card-up-style (20px);
     }
@@ -9,7 +9,7 @@
 }
 .desc_align{text-align: center;}
 .title_margin{margin-bottom: 0px;}
-.text_left{margin-top: 284px;font-size: 48px;font-weight: 600;}
+.text_left{margin-top: 0px;font-size: 48px;font-weight: 600;}
 .wrapper-block{display: flex;justify-content: space-between;align-items: baseline;margin-top: 20px;}
 
 @media only screen and (max-width:992px) {
